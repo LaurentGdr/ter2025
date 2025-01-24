@@ -1,0 +1,10 @@
+to start run this command line : 
+
+remember to change the command line ip address 
+
+macOs et windows : 
+docker run -e HOST_IP=<adresse_ip> -p 80:80 ghcr.io/masteriot/redirection
+
+
+linux : 
+docker run --add-host=host.docker.internal:host-gateway -e HOST_IP=<adresse_ip> -p 80:80 ghcr.io/masteriot/redirection
